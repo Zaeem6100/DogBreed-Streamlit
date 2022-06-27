@@ -3,12 +3,13 @@ from keras.models import load_model
 from PIL import Image
 import numpy as np
 from skimage import transform
+import streamlit as st
 
 
 def loadModel(path):
     return load_model(path)
 
-
+@st.experimental_singleton
 def loadLabels(filename):
     with open(filename) as f:
         breed_list = [tuple(map(str, i.split(' '))) for i in f]
