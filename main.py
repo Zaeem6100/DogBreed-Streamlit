@@ -1,6 +1,5 @@
 from PIL import Image
 import streamlit as st
-from streamlit_cropper import st_cropper
 
 import helper
 
@@ -36,5 +35,4 @@ def output():
 
 
 if __name__ == '__main__':
-    #
     output()
