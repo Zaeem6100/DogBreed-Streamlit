@@ -2,3 +2,4 @@ streamlit
 keras
 streamlit-cropper
 numpy
+opencv-python

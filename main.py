@@ -7,7 +7,7 @@ filepath = 'file.txt'
 
 
 def predictions(model, breed_list, image):
-    probabilities = model.predict(helper.loadImage(image))
+    probabilities = model.predict(helper.img(image))
     print(probabilities)
     list = []
     for i in probabilities[0].argsort()[-5:][::-1]:
